@@ -1,15 +1,13 @@
-<h1>Héroe: {{ heroe.nombre }} <small>Fecha de aparación: {{ heroe.aparicion }}</small></h1>
+<h1>Héroe: {{ heroe.nombre }} </h1>
+<small>Fecha de aparación: {{ heroe.aparicion }}</small>
 <hr>
 
-<div class="row">
+<div class="col" style="float: right; width: 50%">
+  <!--<div class="col-md-10">-->
+    <img [src]= "heroe.img"  alt="heroe.nombre">
+  <!--</div>-->
+</div>
 
-  <div class="col-md-4">
-
-    <img src="heroe.src"  alt="">
-
-  </div>
-
-
-
-
+<div class="col" style="float: left; width: 50%">
+  <small>Descripción: {{ heroe.bio}} </small>
 </div>
